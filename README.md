@@ -84,8 +84,6 @@ cargo build --release
 
 ### Run it
 
-### Run it
-
 Cylixin provides a command-line interface (CLI) for compiling source files, emitting LLVM IR, and checking the compiler version.
 
 To compile a `.cyx` source file, run:
@@ -94,7 +92,7 @@ To compile a `.cyx` source file, run:
 cylixin build file.cyx
 ```
 
-You can optionally specify the output path:
+You can optionally specify the output executable name:
 
 ```bash
 cylixin build file.cyx -o out
@@ -103,7 +101,7 @@ cylixin build file.cyx -o out
 To emit LLVM IR:
 
 ```bash
-cylixin emit
+cylixin emit file.cyx
 ```
 
 To check the compiler version:
